@@ -36,7 +36,6 @@ namespace WPFRecipeApp
                 mainWindow.recipeDB.AddRecipe(name);
                 mainWindow.CurrentRecipeName = name;
                 mainWindow.NavigateTo(new Page2(mainWindow));
-                mainWindow.NavigateTo(new Page4(mainWindow));
             }
             else
             {

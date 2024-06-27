@@ -25,6 +25,7 @@ namespace WPFRecipeApp
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
+            PopulateComboBox();
         }
         private void PopulateComboBox()
         {

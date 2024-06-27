@@ -13,6 +13,6 @@
         <TextBox Name="txtNumber" Margin="315,165,237,220"/>
         <Button Name="btnSubmit1" Content="Submit" Click="btnSubmit1_Click" Margin="365,272,289,114"/>
         <Label Content="Name of Recipe:" HorizontalAlignment="Left" Margin="202,97,0,0" VerticalAlignment="Top"/>
-        <Label Content="Number of Dngredients:" HorizontalAlignment="Left" Margin="174,185,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number of Ingredients:" HorizontalAlignment="Left" Margin="174,185,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

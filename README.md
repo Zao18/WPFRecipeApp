@@ -56,6 +56,7 @@ License
 This project is licensed under the MIT License.
 
 
+
 FeedBack Section 📓
 
 For the feedback given for part 2 I have tried to correct as much of it as possible but due to much troubleshootign and time restrictions I wasnt able to fix and implement them into my WPF application.

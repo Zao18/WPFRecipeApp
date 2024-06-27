@@ -1,0 +1,33 @@
+﻿<Page x:Class="WPFRecipeApp.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFRecipeApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid>
+        <TextBox Name="txtName" Margin="300,12,184,370" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.905"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.442"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox Name="txtQuantity" Margin="300,83,184,299"/>
+        <TextBox Name="txtUnit" Margin="300,155,184,227"/>
+        <TextBox Name="txtCalories" Margin="300,226,184,156"/>
+        <ComboBox Name="cbFoodGroup" Margin="300,298,184,84"/>
+        <Button Name="btnSubmit2" Content="Submit" Click="btnSubmit2_Click" Margin="377,377,261,3"/>
+        <Label Content="Name of Ingredient:" HorizontalAlignment="Left" Margin="144,29,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantity of Ingredient:" HorizontalAlignment="Left" Margin="137,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unit of Mesurement:" HorizontalAlignment="Left" Margin="148,176,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number of Calories:" HorizontalAlignment="Left" Margin="152,247,0,0" VerticalAlignment="Top"/>
+        <Label Content="Food Group:" HorizontalAlignment="Left" Margin="191,314,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

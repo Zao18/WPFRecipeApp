@@ -22,7 +22,7 @@ namespace WPFRecipeApp
     {
         private MainWindow mainWindow;
         private string recipeName;
-        public Page4(MainWindow mainWindow)
+        public Page4(MainWindow mainWindow) //(Ilford Grammar School, 2015)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
@@ -38,10 +38,15 @@ namespace WPFRecipeApp
 
             txtDescription.Text = "";
 
-            if (mainWindow.ingredientDB.GetAllSteps().Count >= mainWindow.numOfSteps)
+            if (mainWindow.ingredientDB.GetAllSteps().Count >= mainWindow.numOfSteps) //(BillWagner, 2024)
             {
-                mainWindow.NavigateTo(new Page5(mainWindow));
+                mainWindow.NavigateTo(new Page5(mainWindow)); //(Ilford Grammar School, 2015)
             }
         }
     }
 }
+
+//Ilford Grammar School. “C# WPF and GUI - Pages and Navigation.” YouTube, 11 Nov. 2015,
+//www.youtube.com/watch?v=aBh0weP1bmo&list=LL&index=2&ab_channel=IlfordGrammarSchool. Accessed 27 June 2024.
+
+//BillWagner. “Programming Concepts(C#).” Learn.microsoft.com, learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/.

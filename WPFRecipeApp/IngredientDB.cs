@@ -55,3 +55,7 @@ namespace WPFRecipeApp
         }
     }
 }
+
+//stackoverflow. 2011. [Website]
+//Available at: https://stackoverflow.com/questions/5311124/how-to-empty-a-list-in-c
+//[Accessed 15 April 2024].

@@ -21,7 +21,7 @@ namespace WPFRecipeApp
     public partial class Page6 : Page
     {
         private MainWindow mainWindow;
-        public Page6(MainWindow mainWindow)
+        public Page6(MainWindow mainWindow) //(Ilford Grammar School, 2015)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
@@ -33,7 +33,7 @@ namespace WPFRecipeApp
         {
             cbDisplay.Items.Clear();
             List<Recipe> recipes = mainWindow.recipeDB.GetAllRecipes();
-            recipes = recipes.OrderBy(r => r.Name).ToList();
+            recipes = recipes.OrderBy(r => r.Name).ToList(); //(stackoverflow, 2009)
             foreach (var recipe in recipes)
             {
                 cbDisplay.Items.Add(recipe.Name);
@@ -43,14 +43,14 @@ namespace WPFRecipeApp
         //Button to go back to Page 5
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.NavigateTo(new Page5(mainWindow));
+            mainWindow.NavigateTo(new Page5(mainWindow)); //(Ilford Grammar School, 2015)
         }
 
         //Method displays the recipe selected
         private void btnDisplayRecipe_Click(object sender, RoutedEventArgs e)
         {
-            string name = cbDisplay.SelectedItem?.ToString();
-            if (string.IsNullOrEmpty(name))
+            string name = cbDisplay.SelectedItem?.ToString(); //(learn.microsoft, 2024)
+            if (string.IsNullOrEmpty(name)) //(learn.microsoft, 2024)
             {
                 MessageBox.Show("Please select a recipe from the dropdown menu.");
                 return;
@@ -109,3 +109,14 @@ namespace WPFRecipeApp
         }
     }
 }
+
+//Ilford Grammar School. “C# WPF and GUI - Pages and Navigation.” YouTube, 11 Nov. 2015,
+//www.youtube.com/watch?v=aBh0weP1bmo&list=LL&index=2&ab_channel=IlfordGrammarSchool. Accessed 27 June 2024.
+
+//learn.microsoft. 2024. [Website]
+//Available at: https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke?view=windowsdesktop-8.0
+//[Accessed 30 May 2024].
+
+//learn.microsoft. 2024. [Website]
+//Available at: https://learn.microsoft.com/en-us/dotnet/api/system.string.isnullorempty?view=net-8.0
+//[Accessed 30 May 2024].

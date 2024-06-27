@@ -22,7 +22,7 @@ namespace WPFRecipeApp
     {
         private MainWindow mainWindow;
         private string recipeName;
-        public Page2(MainWindow mainWindow)
+        public Page2(MainWindow mainWindow) //(Ilford Grammar School, 2015)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
@@ -31,7 +31,7 @@ namespace WPFRecipeApp
         }
 
         //This populates the combo box
-        private void PopulateComboBox()
+        private void PopulateComboBox() //(Coding Under Pressure, 2020)
         {
             cbFoodGroup.Items.Add(new ComboBoxItem { Content = "Starchy foods" });
             cbFoodGroup.Items.Add(new ComboBoxItem { Content = "Vegetables and fruits" });
@@ -51,7 +51,7 @@ namespace WPFRecipeApp
             {
                 string name = txtName.Text;
                 string unit = txtUnit.Text;
-                string foodGroup = ((ComboBoxItem)cbFoodGroup.SelectedItem).Content.ToString();
+                string foodGroup = ((ComboBoxItem)cbFoodGroup.SelectedItem).Content.ToString(); //(Coding Under Pressure, 2020)
 
                 mainWindow.ingredientDB.AddIngredient(name, quantity, unit, calories, foodGroup);
 
@@ -61,16 +61,16 @@ namespace WPFRecipeApp
                 txtQuantity.Text = "";
                 txtUnit.Text = "";
                 txtCalories.Text = "";
-                cbFoodGroup.SelectedIndex = 0;
+                cbFoodGroup.SelectedIndex = 0; //(stackoverflow, 2012)
 
-                if (mainWindow.ingredientDB.GetAllIngredients().Count >= mainWindow.numOfIngredients)
+                if (mainWindow.ingredientDB.GetAllIngredients().Count >= mainWindow.numOfIngredients) //(learn.microsoft, 2024)
                 {
-                    double totalCalories = mainWindow.TotalCalories(mainWindow.ingredientDB.GetAllIngredients());
+                    double totalCalories = mainWindow.TotalCalories(mainWindow.ingredientDB.GetAllIngredients()); //(learn.microsoft, 2024)
                     if (totalCalories >= 300)
                     {
                         MessageBox.Show("The total calories exceed 300");
                     }
-                    mainWindow.NavigateTo(new Page3(mainWindow));
+                    mainWindow.NavigateTo(new Page3(mainWindow)); //(Ilford Grammar School, 2015)
                 }
             }
             else
@@ -80,3 +80,17 @@ namespace WPFRecipeApp
         }
     }
 }
+
+//Ilford Grammar School. “C# WPF and GUI - Pages and Navigation.” YouTube, 11 Nov. 2015,
+//www.youtube.com/watch?v=aBh0weP1bmo&list=LL&index=2&ab_channel=IlfordGrammarSchool. Accessed 27 June 2024.
+
+//Coding Under Pressure. “How to Populate a ComboBox in Codebehind WPF C# Tutorial.” YouTube, 30 Apr. 2020, 
+//www.youtube.com/watch?v=4rU9yAkgGdk&ab_channel=CodingUnderPressure. Accessed 27 June 2024.
+
+//stackoverflow. 2012. [Website]
+//Available at: https://stackoverflow.com/questions/1602097/what-does-the-operator-do
+//[Accessed 30 May 2024].
+
+//learn.microsoft. 2024. [Website]
+//Available at: https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke?view=windowsdesktop-8.0
+//[Accessed 30 May 2024].

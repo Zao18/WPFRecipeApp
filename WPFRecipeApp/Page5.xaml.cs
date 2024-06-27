@@ -21,7 +21,7 @@ namespace WPFRecipeApp
     public partial class Page5 : Page
     {
         private MainWindow mainWindow;
-        public Page5(MainWindow mainWindow)
+        public Page5(MainWindow mainWindow) //(Ilford Grammar School, 2015)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
@@ -36,7 +36,7 @@ namespace WPFRecipeApp
             // Get all ingredients from ingredientDB in mainWindow
             List<Ingredient> ingredients = mainWindow.ingredientDB.GetAllIngredients();
 
-            foreach (Ingredient ingredient in ingredients)
+            foreach (Ingredient ingredient in ingredients) //(w3schools, 2024)
             {
                 if (ingredient.Quantity == 16 && ingredient.Unit == "teaspoons")
                 {
@@ -54,7 +54,7 @@ namespace WPFRecipeApp
             List<Steps> steps = mainWindow.ingredientDB.GetAllSteps();
 
             int stepNumber = 1;
-            foreach (Steps step in steps)
+            foreach (Steps step in steps) //(w3schools, 2024)
             {
                 recipeText += $"Step {stepNumber}:\n {step.Step}\r\n";
                 stepNumber++;
@@ -71,7 +71,7 @@ namespace WPFRecipeApp
             // Get all ingredients from ingredientDB in mainWindow
             List<Ingredient> ingredients = mainWindow.ingredientDB.GetAllIngredients();
 
-            foreach (Ingredient ingredient in ingredients)
+            foreach (Ingredient ingredient in ingredients) //(w3schools, 2024)
             {
                 if (ingredient.Quantity == 16 && ingredient.Unit == "teaspoons")
                 {
@@ -88,7 +88,7 @@ namespace WPFRecipeApp
             List<Steps> steps = mainWindow.ingredientDB.GetAllSteps();
 
             int stepNumber = 1;
-            foreach (Steps step in steps)
+            foreach (Steps step in steps) //(w3schools, 2024)
             {
                 recipeText += $"Step {stepNumber}:\n {step.Step}\r\n";
                 stepNumber++;
@@ -104,7 +104,7 @@ namespace WPFRecipeApp
 
             List<Ingredient> ingredients = mainWindow.ingredientDB.GetAllIngredients();
 
-            foreach (Ingredient ingredient in ingredients)
+            foreach (Ingredient ingredient in ingredients) //(w3schools, 2024)
             {
                 if (ingredient.Quantity == 16 && ingredient.Unit == "teaspoons")
                 {
@@ -121,7 +121,7 @@ namespace WPFRecipeApp
             List<Steps> steps = mainWindow.ingredientDB.GetAllSteps();
 
             int stepNumber = 1;
-            foreach (Steps step in steps)
+            foreach (Steps step in steps) //(w3schools, 2024)
             {
                 recipeText += $"Step {stepNumber}:\n {step.Step}\r\n";
                 stepNumber++;
@@ -137,7 +137,7 @@ namespace WPFRecipeApp
 
             List<Ingredient> ingredients = mainWindow.ingredientDB.GetAllIngredients();
 
-            foreach (Ingredient ingredient in ingredients)
+            foreach (Ingredient ingredient in ingredients) //(w3schools, 2024)
             {
                 if (ingredient.Quantity == 16 && ingredient.Unit == "teaspoons")
                 {
@@ -154,7 +154,7 @@ namespace WPFRecipeApp
             List<Steps> steps = mainWindow.ingredientDB.GetAllSteps();
 
             int stepNumber = 1;
-            foreach (Steps step in steps)
+            foreach (Steps step in steps) //(w3schools, 2024)
             {
                 recipeText += $"Step {stepNumber}:\n {step.Step}\r\n";
                 stepNumber++;
@@ -170,7 +170,7 @@ namespace WPFRecipeApp
 
             List<Ingredient> ingredients = mainWindow.ingredientDB.GetAllIngredients();
 
-            foreach (Ingredient ingredient in ingredients)
+            foreach (Ingredient ingredient in ingredients) //(w3schools, 2024)
             {
                 if (ingredient.Quantity == 16 && ingredient.Unit == "teaspoons")
                 {
@@ -187,7 +187,7 @@ namespace WPFRecipeApp
             List<Steps> steps = mainWindow.ingredientDB.GetAllSteps();
 
             int stepNumber = 1;
-            foreach (Steps step in steps)
+            foreach (Steps step in steps) //(w3schools, 2024)
             {
                 recipeText += $"Step {stepNumber}:\n {step.Step}\r\n";
                 stepNumber++;
@@ -200,9 +200,9 @@ namespace WPFRecipeApp
         private void btnRestart_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you sure you want to restart?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
+            if (result == MessageBoxResult.Yes) //(stackoverflow, 2010)
             {
-                mainWindow.NavigateTo(new Page1(mainWindow));
+                mainWindow.NavigateTo(new Page1(mainWindow)); //(Ilford Grammar School, 2015)
 
                 mainWindow.ingredientDB.ClearIngredients();
                 mainWindow.ingredientDB.ClearSteps();
@@ -214,8 +214,19 @@ namespace WPFRecipeApp
         //Navigates to the next screen
         private void btnViewRecipes_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.NavigateTo(new Page6(mainWindow));
+            mainWindow.NavigateTo(new Page6(mainWindow)); //(Ilford Grammar School, 2015)
         }
     }
 }
+
+//Ilford Grammar School. “C# WPF and GUI - Pages and Navigation.” YouTube, 11 Nov. 2015,
+//www.youtube.com/watch?v=aBh0weP1bmo&list=LL&index=2&ab_channel=IlfordGrammarSchool. Accessed 27 June 2024.
+
+//w3schools. 2024. [Website]
+//Available at: https://www.w3schools.com/cs/cs_foreach_loop.php
+//[Accessed 15 April 2024].
+
+//stackoverflow. 2010. [Website]
+//Available at: https://stackoverflow.com/questions/3036829/how-do-i-create-a-message-box-with-yes-no-choices-and-a-dialogresult
+//[Accessed 15 April 2024].
 

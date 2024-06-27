@@ -23,17 +23,17 @@ namespace WPFRecipeApp
         private MainWindow mainWindow;
 
         //Button sets the number of steps for the recipe and navigates to Page 4
-        public Page3(MainWindow mainWindow)
+        public Page3(MainWindow mainWindow) //(Ilford Grammar School, 2015)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
         }
         private void btnSubmit3_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(txtSteps.Text, out int num))
+            if (int.TryParse(txtSteps.Text, out int num)) //(stackoverflow, 2019)
             {
                 mainWindow.numOfSteps = num;
-                mainWindow.NavigateTo(new Page4(mainWindow));
+                mainWindow.NavigateTo(new Page4(mainWindow)); //(Ilford Grammar School, 2015)
             }
             else
             {
@@ -42,3 +42,10 @@ namespace WPFRecipeApp
         }
     }
 }
+
+//Ilford Grammar School. “C# WPF and GUI - Pages and Navigation.” YouTube, 11 Nov. 2015,
+//www.youtube.com/watch?v=aBh0weP1bmo&list=LL&index=2&ab_channel=IlfordGrammarSchool. Accessed 27 June 2024.
+
+//stackoverflow. 2019. [Website]
+//Available at: https://stackoverflow.com/questions/55521149/converting-a-string-using-the-double-tryparse-method-in-c-sharp
+//[Accessed 14 April 2024].

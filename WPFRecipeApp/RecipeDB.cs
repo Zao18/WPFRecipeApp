@@ -57,3 +57,5 @@ namespace WPFRecipeApp
         }
     }
 }
+
+//“HashMap ContainsKey() Method in Java.” GeeksforGeeks, 22 June 2018, www.geeksforgeeks.org/hashmap-containskey-method-in-java/.

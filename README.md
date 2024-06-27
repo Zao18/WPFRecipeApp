@@ -40,6 +40,7 @@ Usage
 Adding Ingredients:
 
 Enter the number of ingredients and the recipe name in Page1.
+
 Fill out the ingredient details in Page2.
 Adding Steps:
 
@@ -64,3 +65,8 @@ For the feedback given for part 2 I have tried to correct as much of it as possi
 The first one I remember is that I hadnt used delegates correctly, I had tried to implement it correctly but due it it being complicated for me i decided to just do it another way and focas on the functionality of my WPF application.
 
 The second one I remember if that the restart button wasnt a good button to be used for restarting the application to add a new recipe do to fix this I have renamed the button to make it do the user knows that the button is for entering a new recipe.
+
+
+User Manual
+
+[PROG_User_Manual_ST10137848.pdf](https://github.com/user-attachments/files/16019389/PROG_User_Manual_ST10137848.pdf)

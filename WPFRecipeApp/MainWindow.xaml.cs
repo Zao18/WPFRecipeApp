@@ -22,6 +22,7 @@ namespace WPFRecipeApp
         public int numOfSteps;
         public int count = 1;
         public double totalCalories = 0;
+        public string CurrentRecipeName { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -37,7 +38,7 @@ namespace WPFRecipeApp
             double totalCalories = 0;
             foreach (var ingredient in ingredients)
             {
-                totalCalories += ingredient.Calories * ingredient.Quantity; // Adjust as per your Ingredient class structure
+                totalCalories += ingredient.Calories * ingredient.Quantity; 
             }
             return totalCalories;
         }

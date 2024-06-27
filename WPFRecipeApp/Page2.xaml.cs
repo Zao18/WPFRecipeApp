@@ -22,12 +22,12 @@ namespace WPFRecipeApp
     {
         private MainWindow mainWindow;
         private string recipeName;
-        public Page2(MainWindow mainWindow, string recipeName)
+        public Page2(MainWindow mainWindow)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
-            this.recipeName = recipeName;
             PopulateComboBox();
+            recipeName = mainWindow.CurrentRecipeName;
         }
         private void PopulateComboBox()
         {

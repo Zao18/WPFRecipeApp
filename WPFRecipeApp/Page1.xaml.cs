@@ -34,7 +34,9 @@ namespace WPFRecipeApp
                 mainWindow.numOfIngredients = Convert.ToInt32(txtNumber.Text);
                 string name = txtRecipeName.Text;
                 mainWindow.recipeDB.AddRecipe(name);
-                mainWindow.NavigateTo(new Page2(mainWindow, name));
+                mainWindow.CurrentRecipeName = name;
+                mainWindow.NavigateTo(new Page2(mainWindow));
+                mainWindow.NavigateTo(new Page4(mainWindow));
             }
             else
             {

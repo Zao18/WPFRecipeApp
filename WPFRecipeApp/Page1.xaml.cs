@@ -26,6 +26,8 @@ namespace WPFRecipeApp
             InitializeComponent();
             this.mainWindow = mainWindow;
         }
+
+        //Button sets the number of ingredients and recipe name, then navigates to Page 2
         private void btnSubmit1_Click(object sender, RoutedEventArgs e)
         {
             double num1 = 0;

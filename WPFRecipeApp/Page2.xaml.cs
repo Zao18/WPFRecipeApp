@@ -29,6 +29,8 @@ namespace WPFRecipeApp
             PopulateComboBox();
             recipeName = mainWindow.CurrentRecipeName;
         }
+
+        //This populates the combo box
         private void PopulateComboBox()
         {
             cbFoodGroup.Items.Add(new ComboBoxItem { Content = "Starchy foods" });
@@ -42,6 +44,7 @@ namespace WPFRecipeApp
             cbFoodGroup.SelectedIndex = 0;
         }
 
+        //Button adds an ingredient to the current recipe and navigates to Page 3
         private void btnSubmit2_Click(object sender, RoutedEventArgs e)
         {
             if (double.TryParse(txtQuantity.Text, out double quantity) && double.TryParse(txtCalories.Text, out double calories))
@@ -54,7 +57,6 @@ namespace WPFRecipeApp
 
                 mainWindow.recipeDB.AddIngredientToRecipe(recipeName, name, quantity, unit, calories, foodGroup);
 
-                // Clear the input fields
                 txtName.Text = "";
                 txtQuantity.Text = "";
                 txtUnit.Text = "";
@@ -68,8 +70,6 @@ namespace WPFRecipeApp
                     {
                         MessageBox.Show("The total calories exceed 300");
                     }
-
-                    // Navigate to Page3
                     mainWindow.NavigateTo(new Page3(mainWindow));
                 }
             }

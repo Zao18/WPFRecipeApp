@@ -28,6 +28,8 @@ namespace WPFRecipeApp
             this.mainWindow = mainWindow;
             recipeName = mainWindow.CurrentRecipeName;
         }
+
+        //Button adds a step to the recipe and navigates to Page 5
         private void btnSubmit4_Click(object sender, RoutedEventArgs e)
         {
             string step = txtDescription.Text;

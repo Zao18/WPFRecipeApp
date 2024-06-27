@@ -28,11 +28,13 @@ namespace WPFRecipeApp
             InitializeComponent();
             MainFrame.Navigate(new Page1(this));
         }
+        //Method to navigate to a specified page
         public void NavigateTo(Page page)
         {
             MainFrame.Navigate(page);
         }
 
+        //Method to calculate the total calories of a list of ingredients
         public double TotalCalories(List<Ingredient> ingredients)
         {
             double totalCalories = 0;

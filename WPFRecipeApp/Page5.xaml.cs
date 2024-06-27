@@ -27,6 +27,8 @@ namespace WPFRecipeApp
             this.mainWindow = mainWindow;
             DisplayRecipe();
         }
+
+        //Method displays the recipe and its ingredients and steps
         private void DisplayRecipe()
         {
             string recipeText = "Recipe:\r\nIngredients:\r\n";
@@ -61,6 +63,7 @@ namespace WPFRecipeApp
             txtDisplay.Text = recipeText;
         }
 
+        //Method displays the recipe and its ingredients and steps all halved
         private void btnHalf_Click(object sender, RoutedEventArgs e)
         {
             string recipeText = "Recipe:\r\nIngredients:\r\n";
@@ -94,6 +97,7 @@ namespace WPFRecipeApp
             txtDisplay.Text = recipeText;
         }
 
+        //Method displays the recipe and its ingredients and steps all doubled
         private void btnDouble_Click(object sender, RoutedEventArgs e)
         {
             string recipeText = "Recipe:\r\nIngredients:\r\n";
@@ -126,6 +130,7 @@ namespace WPFRecipeApp
             txtDisplay.Text = recipeText;
         }
 
+        //Method displays the recipe and its ingredients and steps all tripled
         private void btnTriple_Click(object sender, RoutedEventArgs e)
         {
             string recipeText = "Recipe:\r\nIngredients:\r\n";
@@ -158,6 +163,7 @@ namespace WPFRecipeApp
             txtDisplay.Text = recipeText;
         }
 
+        //Resets all the values back to thier original states
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
             string recipeText = "Recipe:\r\nIngredients:\r\n";
@@ -190,6 +196,7 @@ namespace WPFRecipeApp
             txtDisplay.Text = recipeText;
         }
 
+        //Restarts the program
         private void btnRestart_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you sure you want to restart?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -204,6 +211,7 @@ namespace WPFRecipeApp
             }
         }
 
+        //Navigates to the next screen
         private void btnViewRecipes_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.NavigateTo(new Page6(mainWindow));

@@ -27,6 +27,8 @@ namespace WPFRecipeApp
             this.mainWindow = mainWindow;
             PopulateComboBox();
         }
+
+        //This populates the combo box
         private void PopulateComboBox()
         {
             cbDisplay.Items.Clear();
@@ -38,11 +40,13 @@ namespace WPFRecipeApp
             }
         }
 
+        //Button to go back to Page 5
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.NavigateTo(new Page5(mainWindow));
         }
 
+        //Method displays the recipe selected
         private void btnDisplayRecipe_Click(object sender, RoutedEventArgs e)
         {
             string name = cbDisplay.SelectedItem?.ToString();
@@ -84,6 +88,24 @@ namespace WPFRecipeApp
             }
 
             txtDisplay.Text = recipeText;
+        }
+
+        //Button filters the Ingredients
+        private void btnfilterIngredients_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //Button filters the food group
+        private void btnfilterFoodGroup_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //Button filters the calories
+        private void btnfilterCaloires_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

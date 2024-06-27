@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPFRecipeApp
 {
+    //This is for ingredients
     public class Ingredient
     {
         public string Name { get; set; }

@@ -21,6 +21,8 @@ namespace WPFRecipeApp
     public partial class Page3 : Page
     {
         private MainWindow mainWindow;
+
+        //Button sets the number of steps for the recipe and navigates to Page 4
         public Page3(MainWindow mainWindow)
         {
             InitializeComponent();

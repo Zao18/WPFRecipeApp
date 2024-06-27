@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPFRecipeApp
 {
-    internal class Ingredient
+    public class Ingredient
     {
         public string Name { get; set; }
         public double Quantity { get; set; }
@@ -34,5 +34,4 @@ namespace WPFRecipeApp
             this.Step = Step;
         }
     }
-}
 }

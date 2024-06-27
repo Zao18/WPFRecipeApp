@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPFRecipeApp
 {
-    internal class RecipeDB
+    public class RecipeDB
     {
         //Stores the lists of rescipes
         private SortedList<string, Recipe> recipes = new SortedList<string, Recipe>();
